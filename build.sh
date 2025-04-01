@@ -10,7 +10,7 @@ cp src/riichi_rs.d.ts release/node/
 cp src/riichi_rs_node.js release/node/
 sed -i -e 's/riichi-rs/riichi-rs-node/g' release/node/package.json
 sed -i -e 's/"main": "riichi_rs.js"/"main": "riichi_rs_node.js",\n  "types": "riichi_rs.d.ts"/g' release/node/package.json
-sed -i -e 's/"files": \[/"files": \[\n    "riichi_rs_node.js",/g' release/node/package.json
+sed -i -e 's/"files": \[/"files": \[\n    "riichi_rs_node.js",\n    "riichi_rs.d.ts",/g' release/node/package.json
 cp README_NODE.md release/node/README.md
 
 rm -rf pkg
@@ -23,7 +23,7 @@ cp src/riichi_rs.d.ts release/bundlers/
 cp src/riichi_rs_bundlers.js release/bundlers/
 sed -i -e 's/riichi-rs/riichi-rs-bundlers/g' release/bundlers/package.json
 sed -i -e 's/"main": "riichi_rs.js"/"main": "riichi_rs_bundlers.js",\n  "types": "riichi_rs.d.ts"/g' release/bundlers/package.json
-sed -i -e 's/"files": \[/"files": \[\n    "riichi_rs_bundlers.js",/g' release/bundlers/package.json
+sed -i -e 's/"files": \[/"files": \[\n    "riichi_rs_bundlers.js",\n    "riichi_rs.d.ts",/g' release/bundlers/package.json
 cp README_BUNDLERS.md release/bundlers/README.md
 
 rm -rf pkg
