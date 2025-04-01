@@ -231,7 +231,7 @@ export type RiichiResult = {
     fu: number,
     ten: number, // points amount
     outgoing_ten?: [number, number], // (oya, ko) points or nothing
-    yaku: Array<[Yaku, number]>, // (yaku_id, han_count)
+    yaku: Record<Yaku, number>, // (yaku_id => han_count)
     hairi?: {
         now: number,
         wait: Tile[],

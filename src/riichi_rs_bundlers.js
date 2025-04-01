@@ -35,6 +35,10 @@ export const calc = (val) => {
     };
     const result = orig.calc(input);
     if (result.Ok) {
+        result.yaku = result.yaku.reduce((acc, v) => {
+            acc[v[0]] = v[1];
+            return acc;
+        }, {});
         return result.Ok;
     } else {
         throw new Error(result.Err);
