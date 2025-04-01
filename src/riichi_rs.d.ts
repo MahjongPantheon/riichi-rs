@@ -1,46 +1,46 @@
 /* tslint:disable */
 /* eslint-disable */
 
-export type Tile_M1 = 1;
-export type Tile_M2 = 2;
-export type Tile_M3 = 3;
-export type Tile_M4 = 4;
-export type Tile_M5 = 5;
-export type Tile_M6 = 6;
-export type Tile_M7 = 7;
-export type Tile_M8 = 8;
-export type Tile_M9 = 9;
+type Tile_M1 = 1;
+type Tile_M2 = 2;
+type Tile_M3 = 3;
+type Tile_M4 = 4;
+type Tile_M5 = 5;
+type Tile_M6 = 6;
+type Tile_M7 = 7;
+type Tile_M8 = 8;
+type Tile_M9 = 9;
 
-export type Tile_P1 = 10;
-export type Tile_P2 = 11;
-export type Tile_P3 = 12;
-export type Tile_P4 = 13;
-export type Tile_P5 = 14;
-export type Tile_P6 = 15;
-export type Tile_P7 = 16;
-export type Tile_P8 = 17;
-export type Tile_P9 = 18;
+type Tile_P1 = 10;
+type Tile_P2 = 11;
+type Tile_P3 = 12;
+type Tile_P4 = 13;
+type Tile_P5 = 14;
+type Tile_P6 = 15;
+type Tile_P7 = 16;
+type Tile_P8 = 17;
+type Tile_P9 = 18;
 
-export type Tile_S1 = 19;
-export type Tile_S2 = 20;
-export type Tile_S3 = 21;
-export type Tile_S4 = 22;
-export type Tile_S5 = 23;
-export type Tile_S6 = 24;
-export type Tile_S7 = 25;
-export type Tile_S8 = 26;
-export type Tile_S9 = 27;
+type Tile_S1 = 19;
+type Tile_S2 = 20;
+type Tile_S3 = 21;
+type Tile_S4 = 22;
+type Tile_S5 = 23;
+type Tile_S6 = 24;
+type Tile_S7 = 25;
+type Tile_S8 = 26;
+type Tile_S9 = 27;
 
-export type Tile_East = 28;
-export type Tile_South = 29;
-export type Tile_West = 30;
-export type Tile_North = 31;
+type Tile_East = 28;
+type Tile_South = 29;
+type Tile_West = 30;
+type Tile_North = 31;
 
-export type Tile_Haku = 32;
-export type Tile_Hatsu = 33;
-export type Tile_Chun = 34;
+type Tile_Haku = 32;
+type Tile_Hatsu = 33;
+type Tile_Chun = 34;
 
-export type Tile =
+type Tile =
     | Tile_M1
     | Tile_M2
     | Tile_M3
@@ -77,67 +77,67 @@ export type Tile =
     | Tile_Chun
     ;
 
-export type Meld = [true, [Tile, Tile, Tile]] | [boolean, [Tile, Tile, Tile, Tile]];
+type Meld = [true, [Tile, Tile, Tile]] | [boolean, [Tile, Tile, Tile, Tile]];
 
-export type Yaku_Kokushimusou13Sides = 0;
-export type Yaku_Kokushimusou = 1;
-export type Yaku_Chuurenpoto9Sides = 2;
-export type Yaku_Chuurenpoto = 3;
-export type Yaku_SuuankouTanki = 4;
-export type Yaku_Suuankou = 5;
-export type Yaku_Daisuushi = 6;
-export type Yaku_Shosuushi = 7;
-export type Yaku_Daisangen = 8;
-export type Yaku_Tsuuiisou = 9;
-export type Yaku_Ryuuiisou = 10;
-export type Yaku_Chinroutou = 11;
-export type Yaku_Suukantsu = 12;
-export type Yaku_Tenhou = 13;
-export type Yaku_Chihou = 14;
-export type Yaku_Renhou = 15;
-export type Yaku_Daisharin = 16;
-export type Yaku_Chinitsu = 17;
-export type Yaku_Honitsu = 18;
-export type Yaku_Ryanpeikou = 19;
-export type Yaku_Junchan = 20;
-export type Yaku_Chanta = 21;
-export type Yaku_Toitoi = 22;
-export type Yaku_Honroutou = 23;
-export type Yaku_Sankantsu = 24;
-export type Yaku_Shosangen = 25;
-export type Yaku_SanshokuDoukou = 26;
-export type Yaku_Sanankou = 27;
-export type Yaku_Chiitoitsu = 28;
-export type Yaku_DaburuRiichi = 29;
-export type Yaku_Ittsu = 30;
-export type Yaku_Sanshoku = 31;
-export type Yaku_Tanyao = 32;
-export type Yaku_Pinfu = 33;
-export type Yaku_Iipeikou = 34;
-export type Yaku_Menzentsumo = 35;
-export type Yaku_Riichi = 36;
-export type Yaku_Ippatsu = 37;
-export type Yaku_Rinshan = 38;
-export type Yaku_Chankan = 39;
-export type Yaku_Haitei = 40;
-export type Yaku_Houtei = 41;
-export type Yaku_RoundWindEast = 42;
-export type Yaku_RoundWindSouth = 43;
-export type Yaku_RoundWindWest = 44;
-export type Yaku_RoundWindNorth = 45;
-export type Yaku_OwnWindEast = 46;
-export type Yaku_OwnWindSouth = 47;
-export type Yaku_OwnWindWest = 48;
-export type Yaku_OwnWindNorth = 49;
-export type Yaku_Haku = 50;
-export type Yaku_Hatsu = 51;
-export type Yaku_Chun = 52;
+type Yaku_Kokushimusou13Sides = 0;
+type Yaku_Kokushimusou = 1;
+type Yaku_Chuurenpoto9Sides = 2;
+type Yaku_Chuurenpoto = 3;
+type Yaku_SuuankouTanki = 4;
+type Yaku_Suuankou = 5;
+type Yaku_Daisuushi = 6;
+type Yaku_Shosuushi = 7;
+type Yaku_Daisangen = 8;
+type Yaku_Tsuuiisou = 9;
+type Yaku_Ryuuiisou = 10;
+type Yaku_Chinroutou = 11;
+type Yaku_Suukantsu = 12;
+type Yaku_Tenhou = 13;
+type Yaku_Chihou = 14;
+type Yaku_Renhou = 15;
+type Yaku_Daisharin = 16;
+type Yaku_Chinitsu = 17;
+type Yaku_Honitsu = 18;
+type Yaku_Ryanpeikou = 19;
+type Yaku_Junchan = 20;
+type Yaku_Chanta = 21;
+type Yaku_Toitoi = 22;
+type Yaku_Honroutou = 23;
+type Yaku_Sankantsu = 24;
+type Yaku_Shosangen = 25;
+type Yaku_SanshokuDoukou = 26;
+type Yaku_Sanankou = 27;
+type Yaku_Chiitoitsu = 28;
+type Yaku_DaburuRiichi = 29;
+type Yaku_Ittsu = 30;
+type Yaku_Sanshoku = 31;
+type Yaku_Tanyao = 32;
+type Yaku_Pinfu = 33;
+type Yaku_Iipeikou = 34;
+type Yaku_Menzentsumo = 35;
+type Yaku_Riichi = 36;
+type Yaku_Ippatsu = 37;
+type Yaku_Rinshan = 38;
+type Yaku_Chankan = 39;
+type Yaku_Haitei = 40;
+type Yaku_Houtei = 41;
+type Yaku_RoundWindEast = 42;
+type Yaku_RoundWindSouth = 43;
+type Yaku_RoundWindWest = 44;
+type Yaku_RoundWindNorth = 45;
+type Yaku_OwnWindEast = 46;
+type Yaku_OwnWindSouth = 47;
+type Yaku_OwnWindWest = 48;
+type Yaku_OwnWindNorth = 49;
+type Yaku_Haku = 50;
+type Yaku_Hatsu = 51;
+type Yaku_Chun = 52;
 
-export type Yaku_Dora = 53;
-export type Yaku_Uradora = 54;
-export type Yaku_Akadora = 55;
+type Yaku_Dora = 53;
+type Yaku_Uradora = 54;
+type Yaku_Akadora = 55;
 
-export type Yaku =
+type Yaku =
     | Yaku_Kokushimusou13Sides
     | Yaku_Kokushimusou
     | Yaku_Chuurenpoto9Sides
@@ -244,9 +244,105 @@ export type RiichiResult = {
     }
 };
 
-export function init_panic_hook(): void;
-
 export function calc(val: RiichiInput): RiichiResult;
 
-export const Yaku;
-export const Tile;
+export const Yaku: {
+    Kokushimusou13Sides: Yaku_Kokushimusou13Sides,
+    Kokushimusou: Yaku_Kokushimusou,
+    Chuurenpoto9Sides: Yaku_Chuurenpoto9Sides,
+    Chuurenpoto: Yaku_Chuurenpoto,
+    SuuankouTanki: Yaku_SuuankouTanki,
+    Suuankou: Yaku_Suuankou,
+    Daisuushi: Yaku_Daisuushi,
+    Shosuushi: Yaku_Shosuushi,
+    Daisangen: Yaku_Daisangen,
+    Tsuuiisou: Yaku_Tsuuiisou,
+    Ryuuiisou: Yaku_Ryuuiisou,
+    Chinroutou: Yaku_Chinroutou,
+    Suukantsu: Yaku_Suukantsu,
+    Tenhou: Yaku_Tenhou,
+    Chihou: Yaku_Chihou,
+    Renhou: Yaku_Renhou,
+    Daisharin: Yaku_Daisharin,
+    Chinitsu: Yaku_Chinitsu,
+    Honitsu: Yaku_Honitsu,
+    Ryanpeikou: Yaku_Ryanpeikou,
+    Junchan: Yaku_Junchan,
+    Chanta: Yaku_Chanta,
+    Toitoi: Yaku_Toitoi,
+    Honroutou: Yaku_Honroutou,
+    Sankantsu: Yaku_Sankantsu,
+    Shosangen: Yaku_Shosangen,
+    SanshokuDoukou: Yaku_SanshokuDoukou,
+    Sanankou: Yaku_Sanankou,
+    Chiitoitsu: Yaku_Chiitoitsu,
+    DaburuRiichi: Yaku_DaburuRiichi,
+    Ittsu: Yaku_Ittsu,
+    Sanshoku: Yaku_Sanshoku,
+    Tanyao: Yaku_Tanyao,
+    Pinfu: Yaku_Pinfu,
+    Iipeikou: Yaku_Iipeikou,
+    Menzentsumo: Yaku_Menzentsumo,
+    Riichi: Yaku_Riichi,
+    Ippatsu: Yaku_Ippatsu,
+    Rinshan: Yaku_Rinshan,
+    Chankan: Yaku_Chankan,
+    Haitei: Yaku_Haitei,
+    Houtei: Yaku_Houtei,
+    RoundWindEast: Yaku_RoundWindEast,
+    RoundWindSouth: Yaku_RoundWindSouth,
+    RoundWindWest: Yaku_RoundWindWest,
+    RoundWindNorth: Yaku_RoundWindNorth,
+    OwnWindEast: Yaku_OwnWindEast,
+    OwnWindSouth: Yaku_OwnWindSouth,
+    OwnWindWest: Yaku_OwnWindWest,
+    OwnWindNorth: Yaku_OwnWindNorth,
+    Haku: Yaku_Haku,
+    Hatsu: Yaku_Hatsu,
+    Chun: Yaku_Chun,
+
+    Dora: Yaku_Dora,
+    Uradora: Yaku_Uradora,
+    Akadora: Yaku_Akadora,
+};
+
+export const Tile: {
+    M1: Tile_M1,
+    M2: Tile_M2,
+    M3: Tile_M3,
+    M4: Tile_M4,
+    M5: Tile_M5,
+    M6: Tile_M6,
+    M7: Tile_M7,
+    M8: Tile_M8,
+    M9: Tile_M9,
+
+    P1: Tile_P1,
+    P2: Tile_P2,
+    P3: Tile_P3,
+    P4: Tile_P4,
+    P5: Tile_P5,
+    P6: Tile_P6,
+    P7: Tile_P7,
+    P8: Tile_P8,
+    P9: Tile_P9,
+
+    S1: Tile_S1,
+    S2: Tile_S2,
+    S3: Tile_S3,
+    S4: Tile_S4,
+    S5: Tile_S5,
+    S6: Tile_S6,
+    S7: Tile_S7,
+    S8: Tile_S8,
+    S9: Tile_S9,
+
+    East: Tile_East,
+    South: Tile_South,
+    West: Tile_West,
+    North: Tile_North,
+
+    Haku: Tile_Haku,
+    Hatsu: Tile_Hatsu,
+    Chun: Tile_Chun,
+};
