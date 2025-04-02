@@ -1,4 +1,4 @@
-use riichi_rust::{calc_riichi, RiichiHand, RiichiOptions, RiichiResult};
+use riichi_rust::{RiichiHand, RiichiOptions, RiichiResult, calc_riichi};
 use serde::{Deserialize, Serialize};
 use serde_wasm_bindgen::{from_value, to_value};
 use wasm_bindgen::prelude::*;
@@ -37,13 +37,13 @@ extern "C" {
 pub fn calc(val: JsValue) -> JsValue {
     let i: Result<RiichiHandInput, serde_wasm_bindgen::Error> = from_value(val);
     match i {
-        Ok(i) => {
+        Ok(mut i) => {
             let result = calc_riichi(
                 RiichiHand {
                     open_part: i.open_part,
                     closed_part: i.closed_part,
                 },
-                &i.options,
+                &mut i.options,
                 i.calc_hairi,
             );
             to_value(&result).unwrap()

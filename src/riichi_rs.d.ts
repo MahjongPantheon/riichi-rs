@@ -217,7 +217,6 @@ export type RiichiInput = {
         local_yaku_enabled: Yaku[],
         all_local_yaku_enabled: boolean,
         allow_double_yakuman: boolean,
-        taken_tile: Tile | -1,
         last_tile: boolean
     }>,
     calc_hairi?: boolean

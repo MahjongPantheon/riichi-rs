@@ -18,7 +18,6 @@ const defaults = {
     local_yaku_enabled: [],
     all_local_yaku_enabled: false,
     allow_double_yakuman: false,
-    taken_tile: -1,
     last_tile: false
 };
 
