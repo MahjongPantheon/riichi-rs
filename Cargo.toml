@@ -1,6 +1,6 @@
 [package]
 name = "riichi-rs"
-version = "0.2.3"
+version = "0.2.4"
 authors = ["Oleg Klimenko <me@ctizen.dev>"]
 edition = "2018"
 
@@ -14,7 +14,7 @@ default = ["console_error_panic_hook"]
 wasm-bindgen = "0.2.63"
 serde = { version = "1.0.219", features = ["derive"] }
 serde-wasm-bindgen = "0.6.5"
-riichi-rust = { git = "https://github.com/MahjongPantheon/riichi-rust.git" }
+riichi-rust = { git = "https://github.com/MahjongPantheon/riichi-rust.git", version = "0.2.0" }
 
 # The `console_error_panic_hook` crate provides better debugging of panics by
 # logging them with `console.error`. This is great for development, but requires
