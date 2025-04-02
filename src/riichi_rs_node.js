@@ -7,7 +7,6 @@ const defaults = {
     riichi: false,
     ippatsu: false,
     double_riichi: false,
-    last_take: false,
     after_kan: false,
     tile_discarded_by_someone: -1,
     bakaze: 29,

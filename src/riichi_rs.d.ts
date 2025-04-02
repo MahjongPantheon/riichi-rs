@@ -206,7 +206,6 @@ export type RiichiInput = {
         riichi: boolean,
         ippatsu: boolean,
         double_riichi: boolean,
-        last_take: boolean,
         after_kan: boolean,
         tile_discarded_by_someone: Tile | -1,
         bakaze: Tile,
