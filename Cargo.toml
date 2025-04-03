@@ -1,6 +1,6 @@
 [package]
 name = "riichi-rs"
-version = "0.3.0"
+version = "1.0.0"
 authors = ["Oleg Klimenko <me@ctizen.dev>"]
 edition = "2024"
 
@@ -11,7 +11,7 @@ crate-type = ["cdylib", "rlib"]
 wasm-bindgen = "0.2.63"
 serde = { version = "1.0.219", features = ["derive"] }
 serde-wasm-bindgen = "0.6.5"
-riichi-rust = { git = "https://github.com/MahjongPantheon/riichi-rust.git", version = "0.6.1" }
+riichi-rust = { git = "https://github.com/MahjongPantheon/riichi-rust.git", version = "1.0.0" }
 
 [profile.release]
 # Tell `rustc` to optimize for small code size.
