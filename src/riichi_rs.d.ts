@@ -235,11 +235,6 @@ export type RiichiResult = {
         wait: Tile[],
         waits_after_discard: Array<[Tile, Tile[]]>,
     }
-    hairi7and13?: {
-        now: number,
-        wait: Tile[],
-        waits_after_discard: Array<[Tile, Tile[]]>,
-    }
 };
 
 export function calc(val: RiichiInput): RiichiResult;
