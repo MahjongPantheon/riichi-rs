@@ -1,3 +1,5 @@
+#![forbid(unsafe_code)]
+
 use riichi_rust::{RiichiHand, RiichiOptions, RiichiResult, calc_riichi};
 use serde::{Deserialize, Serialize};
 use serde_wasm_bindgen::{from_value, to_value};
